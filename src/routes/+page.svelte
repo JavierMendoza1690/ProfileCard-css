@@ -1,6 +1,6 @@
 <div class="profile-card">
     <div class="image">
-        <img src="/photo1.webp" alt="profile image" class="profile-img" >
+        <img src="/photo3.jpg" alt="profile image" class="profile-img" >
     </div>
 
     <div class="text-data">
@@ -58,9 +58,9 @@
         height: 150px;
         width: 150px;
         border-radius: 50%;
-        background-color: #4070f4;
         padding: 3px;
         margin-bottom: 10px;
+        z-index: 20;
     }
 
     .image .profile-img{
@@ -68,7 +68,7 @@
         width: 100%;
         object-fit: cover;
         border-radius: 50%;
-        border: 3px solid #fff;
+        border: 3px solid #616161;
     
     }
 
@@ -82,7 +82,20 @@
         border-radius: 34px;
         padding: 25px;
         box-shadow: 0 5px 10px rgba(0,0,0, 0.1);
+        position: relative;
     }
+
+    .profile-card::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 36%;
+        width: 100%;
+        border-radius: 24px 24px 0 0;
+        background-color: #4070f4;
+        z-index: 1;
+     }
 
     .profile-card .text-data{
         display: flex;
@@ -182,4 +195,6 @@
      .data:last-child{
         border-right: none;
      }
+
+
 </style>
