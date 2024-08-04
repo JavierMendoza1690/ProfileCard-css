@@ -1,0 +1,185 @@
+<div class="profile-card">
+    <div class="image">
+        <img src="/photo1.webp" alt="profile image" class="profile-img" >
+    </div>
+
+    <div class="text-data">
+        <span class="name">Ivonne Galeano</span>
+        <span class="job">Engineer</span>
+    </div>
+
+    <div class="media-buttons">
+        <a href="#" class="link">
+            <box-icon type='logo' name='facebook'></box-icon>
+        </a>
+        <a href="#" class="link">
+            <box-icon name='twitter' type='logo' ></box-icon>
+        </a>
+        <a href="#" class="link">
+            <box-icon name='instagram' type='logo' ></box-icon>
+        </a>
+        <a href="#" class="link">
+            <box-icon name='youtube' type='logo' ></box-icon>
+        </a>
+    </div>
+
+    <div class="buttons">
+        <button class="button">Subscribe</button>
+        <button class="button">Message</button>
+    </div>
+
+    <div class="analytics">
+        <div class="data">
+            <box-icon name='heart' ></box-icon>
+            <span class="number">60k</span>
+        </div>
+        <div class="data">
+            <box-icon name='message-rounded' ></box-icon>
+            <span class="number">20k</span>
+        </div>
+        <div class="data">
+            <box-icon name='share-alt' ></box-icon>
+            <span class="number">60k</span>
+        </div>
+    </div>
+</div> 
+
+<style>
+    :global(body){
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f4f4f4;
+        font-family: "Poppins", sans-serif;
+    }
+
+    .image{
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        background-color: #4070f4;
+        padding: 3px;
+        margin-bottom: 10px;
+    }
+
+    .image .profile-img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 3px solid #fff;
+    
+    }
+
+    .profile-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 370px;
+        width: 100%;
+        background: #fff;
+        border-radius: 34px;
+        padding: 25px;
+        box-shadow: 0 5px 10px rgba(0,0,0, 0.1);
+    }
+
+    .profile-card .text-data{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #333;
+    }
+
+    .text-data .name{
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    .text-data .job{
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .profile-card .media-buttons{
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+    }
+
+     .media-buttons .link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 18px;
+        margin: 0 8px;
+        border-radius: 50%;
+        text-decoration: none;
+        background-color: #4070f4;
+        height: 34px;
+        width: 34px;
+     }
+
+     .media-buttons .link:first-child{
+        background-color: #4267b2;
+     }
+
+     .media-buttons .link:nth-child(2){
+        background-color: #1da1f2;
+     }
+
+     .media-buttons .link:nth-child(3){
+        background-color: #e1306c;
+     }
+
+     .media-buttons .link:nth-child(4){
+        background-color: #ff0000;
+     }
+
+     .profile-card .buttons{
+        display: flex;
+        align-items: center;
+        margin-top: 25px;
+     }
+
+     .buttons .button{
+        color: #fff;
+        font-size: 14px;
+        font-weight: 400;
+        border-radius: 24px;
+        background-color: #4070f4;
+        padding: 8px 24px;
+        margin: 0 10px;
+        cursor: pointer;
+        transition: all .4s ease;
+     }
+
+     .buttons .button:hover{
+        background-color: #0e4bf1;
+     }
+
+     .profile-card .analytics{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 25px;
+     }
+
+     .analytics .data{
+        display: flex;
+        justify-content: center;
+        color: #333;
+        padding: 0 20px;
+        border-right: 2px solid #e7e7e7;
+     }
+
+     .data box-icon{
+        font-size: 18px;
+        margin-right: 6px;
+     }
+
+     .data:last-child{
+        border-right: none;
+     }
+</style>
